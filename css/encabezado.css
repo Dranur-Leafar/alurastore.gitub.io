@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
+
+
+
+    body{
+        display: flex;
+        width: 80.6rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+/*Encabezado*/
+
+.encabezado__container{
+    /*Distribución*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /*Forma*/
+    width: 70.6rem;
+    height: 5.5rem;  
+    
+    /*Propiedades*/
+    background: #fff;
+}
+
+.encabezado__controles{
+    /*Distribución*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /*Propiedades*/
+    width: 30.3rem;
+}
+
+.encabezado__logo{
+    /*Propiedades*/
+    width:8rem;
+    height: min-content;
+}
+
+.encabezado__busqueda{
+    /*Forma*/
+    width: 17.5rem;
+    height: 1.8rem;
+    
+    /*Distribución*/
+    margin-left: 3%;
+    padding-left: .8rem;
+    
+    /*Propiedades*/
+    
+    background: #F5F5F5;
+    border-radius: 1.25rem;
+    border: none;
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: .625rem;
+    color: #000;
+}
+
+.encabezado__login{
+    /*Dimensiones*/
+    width: 9.7rem;
+    height: 2.5rem; 
+ 
+    /*Propiedades*/
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    background: #fff;
+    font-family: 'Raleway';
+    font-size: .75rem;
+    font-weight: 400;
+
+}
+
+/*Responsivo-------*/
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body{
+        display: flex;
+        width: 48rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+   
+   
+   
+    .encabezado__container{
+        width: 48rem;
+        height: 4.5rem;
+    }
+
+    .encabezado__busqueda{
+     height: 2.5rem;
+     width: 16rem;
+     font-size: .9rem;
+    }
+
+    .encabezado__login{
+        width: 22%;
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    body{
+        display: flex;
+        width: 23rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .encabezado__container{
+        justify-content: space-evenly;
+        width: 23rem;
+        margin: 0 0rem;
+    }
+    .encabezado__login{
+        width: 15rem;
+        margin-right: 2rem;
+    }
+    
+    
+    .encabezado__busqueda{
+        display: none;
+    } 
+}
