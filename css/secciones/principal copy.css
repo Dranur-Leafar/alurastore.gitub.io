@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap');
 
+a {
+    text-decoration: none;
+    color: #2A7AE4;
+}
 
 .principal__container{
     width: 70.6rem;
-
     margin-bottom: 4%;
     display: flex;
 flex-wrap: wrap;
@@ -77,7 +80,9 @@ color: #464646;
     text-decoration: none;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     
     .principal__container{
         width: 44.5rem;

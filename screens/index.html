@@ -5,21 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alura Geek</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/encabezado.css">
-    <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/principal.css">
-    <link rel="stylesheet" href="./css/contacto.css">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="../css/secciones/reset.css">
+    <link rel="stylesheet" href="../css/secciones/encabezado.css">
+    <link rel="stylesheet" href="../css/secciones/hero.css">
+    <link rel="stylesheet" href="../css/secciones/principal.css">
+    <link rel="stylesheet" href="../css/secciones/contacto.css">
+    <link rel="stylesheet" href="../css/secciones/footer.css">
 
 </head>
 <body>
     <header class="encabezado__container">
         <div class="encabezado__controles">
-            <img class="encabezado__logo" src="./assets/imagenes/logo.png" alt="">
-            <input type="text" class="encabezado__busqueda" placeholder="¿Qué deseas buscar?">
+            <img class="encabezado__logo" src="../assets/imagenes/logo.png" alt="">
+            <button type="text" class="encabezado__busqueda" placeholder="¿Qué deseas buscar?"> <a href="./buscarProductos.html">Buscar</a></button>
+            
         </div>
-        <button class="encabezado__login">Login</button>
+        <a href="./login.html"><button class="encabezado__login">Login</button></a>
     </header>
     <section class="hero__container">
         <div class="hero__background" src="#" alt="hero__background"></div>
@@ -27,7 +28,7 @@
             
             <h2 class="hero__titulo">Febrero Promocional</h2>
             <p class="hero__detail">Productos seleccionados con 33% de descuento</p>
-            <button class="hero__boton">Ver Consola</button>
+            <button class="hero__boton"><a class="hero-liga"href="#consolas">Ver Consola</a></button>
         </div>
 
     </section>
@@ -35,139 +36,139 @@
         <div class="principal__catalogo">
             <div class="catalogo__encabezado">
                 <h2 class="catalogo__titulo">Star Wars</h2>
-                <a href="#" class="catalogo__completo">Ver todo</a>
+            <a href="./productos.html" class="catalogo__completo">Ver todo</a>
             </div>
             <ul class="catalogo__productos">
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-starwars/1.png" alt="item-imagen" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-starwars/1.png" alt="item-imagen" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-starwars/2.png" alt="item-imagen" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-starwars/2.png" alt="item-imagen" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-starwars/3.png" alt="item-imagen" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-starwars/3.png" alt="item-imagen" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-starwars/4.png" alt="item-imagen" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-starwars/4.png" alt="item-imagen" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-starwars/5.png" alt="item-imagen" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-starwars/5.png" alt="item-imagen" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-starwars/6.png" alt="item-imagen" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-starwars/6.png" alt="item-imagen" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
             </ul>
         </div>
-        <div class="principal__catalogo">
+        <div class="principal__catalogo" id="consolas">
             <div class="catalogo__encabezado">
                 <h2 class="catalogo__titulo">Consolas</h2>
-                <a href="#" class="catalogo__completo">Ver todo</a>
+                <a href="./productos.html" class="catalogo__completo"> <a href="./productos.html">Ver todo</a>
             </div>
             <ul class="catalogo__productos">
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-consolas/1.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-consolas/1.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-consolas/2.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-consolas/2.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-consolas/3.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-consolas/3.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-consolas/4.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-consolas/4.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-consolas/5.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-consolas/5.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-consolas/6.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-consolas/6.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
             </ul>
         </div>
         <div class="principal__catalogo">
             <div class="catalogo__encabezado">
                 <h2 class="catalogo__titulo">Diversos</h2>
-                <a href="#" class="catalogo__completo">Ver todo</a>
+                <a href="./productos.html" class="catalogo__completo"> <a href="./productos.html">Ver todo</a>
             </div>
             <ul class="catalogo__productos">
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-diversos/1.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-diversos/1.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-diversos/2.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-diversos/2.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-diversos/3.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-diversos/3.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-diversos/4.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-diversos/4.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-diversos/5.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-diversos/5.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
                 <li class="catalogo__item">
-                    <img src="./assets/imagenes/Galeria-diversos/6.png" alt="" class="item-imagen">
+                    <img src="../assets/imagenes/Galeria-diversos/6.png" alt="" class="item-imagen">
                     <h3 class="item-titulo">Producto XYZ</h3>
                     <h2 class="item-precio">$ 60,00</h2>
-                    <a href="#"class="item-producto">Ver producto</a>
+                    <a href="./verProducto.html"class="item-producto">Ver producto</a>
                 </li>
             </ul>
         </div>
     </main>
     <section class="contacto__container">
         <form class="contacto__formulario" action="">
-            <img class="contacto__logo" src="./assets/imagenes/logo.png" alt="">
+            <img class="contacto__logo" src="../assets/imagenes/logo.png" alt="">
             <ul class="contacto__ligas">
                 <li class="ligas-item">Quines Somos</li>
                 <li class="ligas-item">Política de privacidad</li>
@@ -178,8 +179,8 @@
             </ul>
             <div class="contacto__campos">
                 <h2 class="contacto-titulo">Hable con nosotros</h2>
-                <input type="text" class="contacto-nombre" placeholder="Nombre">
-                <input class="contacto-mensaje" type="text" placeholder="Escribe tu mensaje">
+                <input type="text" class="contacto-nombre" placeholder="Nombre" maxlength="40" required>
+                <input class="contacto-mensaje" type="text" placeholder="Escribe tu mensaje" maxlength="120" required>
                 <button class="contacto-boton">Enviar mensaje</button>
             </div>
         </form>
@@ -189,4 +190,5 @@
         <p class="footer-fecha">2023</p>
     </footer>
 </body>
+<script src="../js/obtenerProductos.js"></script>
 </html>

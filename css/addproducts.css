@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+.agregar__container{
+    width: 80.6rem;
+    display: flex;
+    justify-content: center;
+    background: #F5F5F5;
+}
+
+.agregar__elementos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30rem;
+    gap: 1rem;
+    margin: 4rem auto;
+}
+
+.agregar__titulo{
+    font-family: 'Raleway';
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.agregar{
+    width: 30rem;
+    height: 1.5rem;
+    border: none;
+    text-decoration: none;
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+
+}
+
+#img-uploader{
+   width:10rem;
+   background: #EAF2FD;
+   border-radius: 5px;
+   text-align: center;
+}
+
+#img-uploader:hover{
+   cursor: pointer;
+}
+
+.imagen-prvw-container{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#img-preview{
+   width: 8rem;
+   height: 8rem;
+
+}
+
+.imagen{
+   align-items: center;
+   text-align: center;
+   margin: 2rem auto;
+}
+
+
+.agregar-boton{
+    border: none;
+    background: cornflowerblue;
+    width: 32rem;
+    height: 3rem;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    color: #F5F5F5;
+    padding: 1rem;
+    
+}
+.contacto__productos {
+    width: 80.6rem;
+    background: #EAF2FD;
+    padding-bottom: 2%;
+  }
+
+  .footer__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+        width: 70.6rem;
+    height: 8rem;
+ }
+
+ .footer-titulo, .footer-fecha{
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: .8rem;
+    margin-top: .5rem;
+    color: #464646;
+ }
+ .descripcion{
+    height: 3rem;
+ }
+
+ @media screen and (min-width:768px ) and (max-width:1024px) {
+    .agregar__container{
+        width: 48rem;
+    } 
+    
+    .agregar{
+        width: 42rem;
+     }
+
+     .agregar__elementos{
+        width: 42rem;
+     }
+     .agregar-boton{
+        width: 43rem;
+     }
+     .agregar__titulo{
+        text-align: left;
+        font-size: 1.5rem;
+     }
+
+     .footer__container{
+        height: 4rem;
+     }
+     .descripcion{
+        height: 3rem;
+     }
+    }
+
+    @media screen and (min-width: 0) and (max-width:767px){
+        .agregar__container{
+            width: 23rem;
+        } 
+        
+        .agregar{
+            width: 19rem;
+         }
+    
+         .agregar__elementos{
+            width: 20rem;
+         }
+         .agregar-boton{
+            width: 20rem;
+         }
+
+         .agregar__titulo{
+            text-align: left;
+            font-size: 1.2rem;
+         }
+
+         .descripcion{
+            height: 3rem;
+         }
+    }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="../css/secciones/reset.css">
+    <link rel="stylesheet" href="../css/secciones/encabezado.css">
+    <link rel="stylesheet" href="../css/secciones/hero.css">
+    <link rel="stylesheet" href="../css/secciones/principal.css">
+    <link rel="stylesheet" href="../css/secciones/contacto.css">
+    <link rel="stylesheet" href="../css/secciones/footer.css">
+
+</head>
+<body>
+    <header class="encabezado__container">
+        <div class="encabezado__controles">
+            <img class="encabezado__logo" src="../assets/imagenes/logo.png" alt="">
+            <input type="text" class="encabezado__busqueda" placeholder="¿Qué deseas buscar?">
+            <a href="#" data-search><img class="encabezado__lupa" src="../assets/iconos/lupa.png" alt="lupa"></a>
+            <a href="./index.html">Inicio</a>
+        </div>
+        <button class="encabezado__login"><a href="./login.html">Login</a></button>
+    </header>
+    <section class="hero__container">
+        <div class="hero__background" src="#" alt="hero__background"></div>
+        <div class="hero__elements">
+            
+            <h2 class="hero__titulo">Febrero Promocional</h2>
+            <p class="hero__detail">Productos seleccionados con 33% de descuento</p>
+            <button class="hero__boton"><a href="./index.html#consolas" class="hero-liga">Ver Consola</a></button>
+        </div>
+
+    </section>
+    <main class="principal__container">
+        <div class="principal__catalogo">
+            <div class="catalogo__encabezado">
+                <h2 class="catalogo__titulo">Productos</h2>
+                <a href="./productos.html" class="catalogo__completo">Ver todo</a>
+            </div>
+            <ul class="catalogo__productos" data-table>
+                
+            </ul>
+        </div>
+    </main>
+    <section class="contacto__container">
+        <form class="contacto__formulario" action="">
+            <img class="contacto__logo" src="../assets/imagenes/logo.png" alt="">
+            <ul class="contacto__ligas">
+                <li class="ligas-item">Quines Somos</li>
+                <li class="ligas-item">Política de privacidad</li>
+                <li class="ligas-item">Programa de fidelidad</li>
+                <li class="ligas-item">Nuestras Tiendas</li>
+                <li class="ligas-item">Quiero ser franquiciado</li>
+                <li class="ligas-item">Anuncie aqui</li>
+            </ul>
+            <div class="contacto__campos">
+                <h2 class="contacto-titulo">Hable con nosotros</h2>
+                <input type="text" class="contacto-nombre" placeholder="Nombre" maxlength="40" required>
+                <input class="contacto-mensaje" type="text" placeholder="Escribe tu mensaje" maxlength="120" required>
+                <button class="contacto-boton">Enviar mensaje</button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer__container">
+        <h2 class="footer-titulo">Desarrollado por Rafael Runard</h2>
+        <p class="footer-fecha">2023</p>
+    </footer>
+</body>
+<script  src="../js/filtrarProductos.js"></script>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/secciones/reset.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/secciones/encabezado.css">
+    <link rel="stylesheet" href="../css/secciones/footer.css">
+    <link rel="stylesheet" href="../css/secciones/hero.css">
+    <link rel="stylesheet" href="../css/secciones/principal.css">
+    <link rel="stylesheet" href="../css/secciones/contacto.css">
+</head>
+<body>
+    <header class="encabezado__container">
+        <div class="encabezado__controles">
+            <img class="encabezado__logo" src="../assets/imagenes/logo.png" alt="">
+            <a href="./index.html">Inicio</a>
+            <button type="text" class="encabezado__busqueda" placeholder="¿Qué deseas buscar?"> <a href="./buscarProductos.html">Buscar</a></button>
+
+        </div>
+       <!-- <button class="encabezado__login">Login</button> -->
+    </header>
+   <main class="login__container">
+        <form class="login__componentes" data-form>
+                <h2 class="login__titulo">Iniciar Sesión</h2>
+                <input placeholder="Escriba su correo electrónico" class="login__correo" type="email" data-email required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <input placeholder="Escriba su contraseña" type="password" class="login__password" data-pass required>
+                <button class="login__boton">Entrar</button>
+            
+        </form>
+   </main>
+   
+    <section class="contacto__login">
+        <form class="contacto__formulario" action="">
+            <img class="contacto__logo" src="../assets/imagenes/logo.png" alt="">
+            <ul class="contacto__ligas">
+                <li class="ligas-item">Quines Somos</li>
+                <li class="ligas-item">Política de privacidad</li>
+                <li class="ligas-item">Programa de fidelidad</li>
+                <li class="ligas-item">Nuestras Tiendas</li>
+                <li class="ligas-item">Quiero ser franquiciado</li>
+                <li class="ligas-item">Anuncie aqui</li>
+            </ul>
+            <div class="contacto__campos">
+                <h2 class="contacto-titulo">Hable con nosotros</h2>
+                <input type="text" class="contacto-nombre" placeholder="Nombre">
+                <input class="contacto-mensaje" type="text" placeholder="Escribe tu mensaje">
+                <button class="contacto-boton">Enviar mensaje</button>
+            </div>
+        </form>
+    </section>
+    <footer class="footer__login">
+        <h2 class="footer-titulo">Desarrollado por Rafael Runard</h2>
+        <p class="footer-fecha">2023</p>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

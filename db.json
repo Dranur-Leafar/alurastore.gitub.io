@@ -1,0 +1,155 @@
+{
+  "perfil": [
+    {
+      "email": "runard@gmail.com",
+      "contrasena": "rafiliss",
+      "id": 1
+    }
+  ],
+  "producto": [
+    {
+      "categoria": "Consola",
+      "nombre": "Control Xbox one",
+      "precio": "1600",
+      "descripcion": "control de consola xbox 360, one, series",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680322767/1_ftlwlg.png",
+      "id": "66460d72-5bbf-4c2f-91a7-9f9bdfa4883a"
+    },
+    {
+      "categoria": "consola",
+      "nombre": "playstation 5",
+      "precio": "8960",
+      "descripcion": "consola playstation 5 con 2 juegos call of dutty y modern warfare3",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680323078/2_fmjql1.png",
+      "id": "a958f196-4e9e-43c7-b2e4-c76103fe0e14"
+    },
+    {
+      "categoria": "Consola",
+      "nombre": "nintendo primera gen",
+      "precio": "896",
+      "descripcion": "consola nintendo, primera generación",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680323206/3_op9xbd.png",
+      "id": "4136824f-eba7-4c9b-b2f4-9031c641ee89"
+    },
+    {
+      "categoria": "consolas",
+      "nombre": "control de switch",
+      "precio": "1400",
+      "descripcion": "control doble, rojo y azul",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680323332/4_mgaard.png",
+      "id": "3e67549f-56df-4759-91d0-6d0daa45b8f9"
+    },
+    {
+      "categoria": "Consola",
+      "nombre": "Consola xbox one ser",
+      "precio": "12450",
+      "descripcion": "control de consola xbox 360",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680323834/5_nimp7f.png",
+      "id": "df462301-d611-470a-b694-a3200e6e2370"
+    },
+    {
+      "categoria": "consola",
+      "nombre": "gameboy",
+      "precio": "1458",
+      "descripcion": "consola gameboy advance con 15 juegos",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680324043/6_kngslu.png",
+      "id": "0b02a752-ba14-4280-ac8c-b6f63fb44531"
+    },
+    {
+      "categoria": "Varios",
+      "nombre": "Playera de Atari",
+      "precio": "790",
+      "descripcion": "playera con logo de Atari en color crema con rojo en 3 tallas",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680324136/1_bbqwsk.png",
+      "id": "142393bf-c74d-48eb-a39f-4de11142e754"
+    },
+    {
+      "categoria": "Varios",
+      "nombre": "Muñeco de Sonic",
+      "precio": "250",
+      "descripcion": "muñeco Sonic the headgog a 15cm de altura",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680324625/3_falrie.png",
+      "id": "5c062c73-0bd8-4d7d-bded-6aabbed5b7b0"
+    },
+    {
+      "categoria": "Varios",
+      "nombre": "Radio retro",
+      "precio": "840",
+      "descripcion": "radio retro ochentear",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680324924/4_mi3gcv.png",
+      "id": "eb1abcbd-fa3b-4895-96b7-9fc235ea4f62"
+    },
+    {
+      "categoria": "Varios",
+      "nombre": "VR marca genius",
+      "precio": "3489",
+      "descripcion": "Visor marca genius ",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680325061/5_dsijol.png",
+      "id": "21ef9e7b-9bfe-4b5b-b129-261bbd6992e3"
+    },
+    {
+      "categoria": "Varios",
+      "nombre": "Botarga Pikachu",
+      "precio": "4500",
+      "descripcion": "Unitalla para con ventilacion",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680325114/6_heot59.png",
+      "id": "63341c37-8868-494e-9c98-b278c670671a"
+    },
+    {
+      "categoria": "Star Wars",
+      "nombre": "Taza de Starwars",
+      "precio": "250",
+      "descripcion": "Taza de Blanca Starwars patrol",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680325219/1_udjfop.png",
+      "id": "50dd876c-2297-4edc-966b-6b7adaa54bc2"
+    },
+    {
+      "categoria": "Star Wars",
+      "nombre": "Darth Vader Lego",
+      "precio": "490",
+      "descripcion": "Darth Vader Lego de 15cm de altura",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680325271/2_okzama.png",
+      "id": "9ccd4d72-9053-49c0-a01e-d91828ecffde"
+    },
+    {
+      "categoria": "Star Wars",
+      "nombre": "Muñeco Yoda",
+      "precio": "1600",
+      "descripcion": "Muñeco Yoda tamaño 20cm",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680325310/3_maehf9.png",
+      "id": "231139ba-ac19-47d1-9baa-ec2ac2454199"
+    },
+    {
+      "categoria": "Star Wars",
+      "nombre": "Disfraz Starwars",
+      "precio": "18900",
+      "descripcion": "Tamaño real 1.89 ajustable",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680325346/4_tp2ajs.png",
+      "id": "f0d7a063-1c07-45e5-8167-f46b9295642c"
+    },
+    {
+      "categoria": "Star Wars",
+      "nombre": "Baby Yoda",
+      "precio": "690",
+      "descripcion": "Muñeco Baby Yoda 30cm",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680325394/5_mtj3dv.png",
+      "id": "735d580a-8c14-40b4-89cd-dff09a0e944e"
+    },
+    {
+      "categoria": "Star Wars",
+      "nombre": "Muñeco Starwars",
+      "precio": "1500",
+      "descripcion": "Darth Cirius tamaño 60cm",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680325425/6_hezeyk.png",
+      "id": "3ee944a0-99e8-459f-a780-7c3af04506ce"
+    },
+    {
+      "categoria": "Varios",
+      "nombre": "playera nintendo",
+      "precio": "790",
+      "descripcion": "playera con logo de Nintendo en color crema con rojo en 3 tallas",
+      "imagen": "https://res.cloudinary.com/dmim46vju/image/upload/v1680453546/2_sl8cby.png",
+      "id": "59081f4f-4eb8-4c23-ba9c-b5952983bf73"
+    }
+  ]
+}
