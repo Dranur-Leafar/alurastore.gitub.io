@@ -32,23 +32,38 @@ function limpiarFormulario(formulario){
 
 //funcion para agregar un producto a la base de datos 
 function agregarProducto(categoria, nombre, precio, descripcion, imagen){
+    const precionumber = parseFloat(precio)
+    const data = {
+        "records":[
+       
+          {
+         "fields": {
+            "Categoria": categoria,
+            "Nombre": nombre,
+            "Precio": precionumber,
+            "Descripción": descripcion,
+            "Imagen": imagen,
+            "id": uuid.v4()
+            }
+        }
+    ]
+    } 
     let opciones = {
         method: "POST",
-        headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({categoria, nombre, precio, descripcion, imagen, id: uuid.v4()})
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer pat2zTQBj6IKVhgSZ.ede3d29a1cb145fef8c928d43f400078d111431eca990d3256ebdf05a674dbbe'
+          },
+        body: JSON.stringify(data)
         }
-
-    
-     return fetch("http://localhost:3000/producto",opciones).then(respuesta=>{
-        return respuesta.json()
-    })
-    .catch((err) => {
-        console.log(err)
-        return err})
-    
-    
+//body: JSON.stringify({categoria, nombre, precio, descripcion, imagen, id: uuid.v4()})
+    const idok= data.records[0].fields.id
+     return fetch("https://api.airtable.com/v0/appVLlnZ37HeHBIDE/Productos?maxRecords=3&view=Grid%20view",opciones).then(respuesta => {
+        console.log(respuesta.json());
+        return idok
+    })     
 }
-
+     
 
 
 
@@ -60,11 +75,11 @@ formulario.addEventListener("submit", (e)=>{
     precio = formulario.precio.value;
     descripcion = formulario.descripcion.value;
     imagen = imagePreview.src;
-    agregarProducto(categoria, nombre, precio, descripcion, imagen).then((respuesta)=> {
+    agregarProducto(categoria, nombre, precio, descripcion, imagen).then((idok)=> {
                 
-   
         
-        console.log("Producto agregado correctamente con el ID",  respuesta.id);
+        
+        alert("Tu producto se agrego correctamente con el id", idok);
 
         
            

@@ -1,19 +1,19 @@
 
 
-const crearDOM = (categoria, nombre, precio, descripcion, imagen, id) => {
+const crearDOM = (categoria, nombre, precio, descripcion, imagen, idrow) => {
   const contenidoHTML =
 
-    `<li class="catalogo__item" data-item id="${id}">
+    `<li class="catalogo__item" data-item id="${idrow}">
       <img src="${imagen}" name="imagen" class="item-imagen">
         <h3 data-name class="item-titulo">${nombre}</h3>
         <h2 name="precio" class="item-precio">${precio}</h2>
-        <a href="#" class="boton-ver" data-ver  id="${id}" >Ver producto</a>
+        <a href="#" class="boton-ver" data-ver  id="${idrow}" >Ver producto</a>
     </li>`
 
   return contenidoHTML
 }
 
-const crearDOMH = (categoria, nombre, precio, descripcion, imagen, id) => {
+const crearDOMH = (categoria, nombre, precio, descripcion, imagen, idrow) => {
   const contenidoHTMLH =
 
     `<div class="ver__descripcion" >
@@ -31,15 +31,21 @@ const crearDOMH = (categoria, nombre, precio, descripcion, imagen, id) => {
 //4
 
 const construirElementoH = (resultado) => {
-  console.log(resultado)
+  console.log(resultado.Descripción)
   const table = document.querySelector("[data-header]");
   table.innerHTML = '';
 
-  resultado.forEach(({ categoria, nombre, precio, descripcion, imagen, id }) => {
-    const table = document.querySelector("[data-header]");
-    const nuevaLinea = crearDOMH(categoria, nombre, precio, descripcion, imagen, id);
+  
+    const categoria = resultado.categoria;
+    const nombre = resultado.Nombre;
+    const precio = resultado.Precio;
+    const imagen = resultado.Imagen;
+    const descripcion = resultado.Descripción;
+    const idrow = resultado.idrow;
+      
+    //const table = document.querySelector("[data-header]");
+    const nuevaLinea = crearDOMH(categoria, nombre, precio, descripcion, imagen, idrow);
     table.innerHTML += nuevaLinea;
-  })
   
   
   
@@ -48,27 +54,35 @@ const construirElementoH = (resultado) => {
   ;}
 
 const construirElemento = (resultado) => {
-  console.log(resultado)
+  
   const table = document.querySelector("[data-table]");
   table.innerHTML = '';
-
-  resultado.forEach(({ categoria, nombre, precio, descripcion, imagen, id }) => {
+  resultado.forEach(element=> {
+    const categoria = element.categoria;
+    const nombre = element.Nombre;
+    const precio = element.Precio;
+    const imagen = element.Imagen;
+    const descripcion = element.descripción;
+    const idrow = element.idrow;
+      
     const table = document.querySelector("[data-table]");
-    const nuevaLinea = crearDOM(categoria, nombre, precio, descripcion, imagen, id);
+    const nuevaLinea = crearDOM(categoria, nombre, precio, descripcion, imagen, idrow);
     table.innerHTML += nuevaLinea;
-
+    
 
         //seleccionar todos los botones Ver
-        const elementos = document.getElementsByClassName("boton-ver");
+        const elementos = document.querySelectorAll("[data-ver]");
         //convertirlos en Array
         elementosArray = Array.from(elementos); 
         //escuchar cuando se haga clicl en alguno de ellos
         elementosArray.forEach((element) => {
           element.addEventListener('click', ()=> {
-            //toma el id del boton editar  
-            let id = element.id
-              getDataH(id).then( (respuesta)=>{
-                
+            //toma el id del boton editar 
+            console.log(element.id) 
+            
+             
+              getDataH(element.id).then( (respuesta)=>{
+                console.log(respuesta)
                 construirElementoH(respuesta)
               })
               
@@ -157,18 +171,45 @@ const construirElemento = (resultado) => {
 //3
 
 const getDataH = (id) => {
-  var res = fetch(`http://localhost:3000/producto?id=${id}`).then(res => res.json())
-  console.log(res)
-  return res;
+  console.log("2 obtenerDatos")
+  let opciones = {
+    method: "GET",
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer pat2zTQBj6IKVhgSZ.ede3d29a1cb145fef8c928d43f400078d111431eca990d3256ebdf05a674dbbe'
+      },
+  
+    }
+
+ return fetch(`https://api.airtable.com/v0/appVLlnZ37HeHBIDE/Productos/${id}`, opciones)
+ .then(respuesta => respuesta.json())
+ .then(respuesta => respuesta.fields)
+  
 
 }
 
 
-const getData = () => {
-  var res = fetch("http://localhost:3000/producto").then(res => res.json())
-  console.log(res)
-  return res;
 
+const getData = () => {
+  console.log("2 obtenerDatos")
+  let opciones = {
+    method: "GET",
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer pat2zTQBj6IKVhgSZ.ede3d29a1cb145fef8c928d43f400078d111431eca990d3256ebdf05a674dbbe'
+      },
+  
+    }
+
+ return fetch('https://api.airtable.com/v0/appVLlnZ37HeHBIDE/Productos', opciones)
+ .then(respuesta => respuesta.json())
+ .then(respuesta => {
+  console.log(respuesta.records)
+  const resultadoArray = [];
+  respuesta.records.forEach(element=>{
+    element.fields.idrow = element.id
+    resultadoArray.push(element.fields)})
+    return resultadoArray})
 }
 //2
 

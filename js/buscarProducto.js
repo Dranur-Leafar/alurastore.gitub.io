@@ -2,8 +2,12 @@
 const boton = document.querySelector("[data-search]");
 
 const crearDOM = (categoria, nombre, precio, descripcion, imagen, id) => {
-const contenidoHTML =
-`<li>
+  /*contenido = document.querySelectorAll("[data-item]")
+  conenido = "";*/
+  const contenidoHTML = " ";
+  contenidoHTML =
+
+`<li data-item>
 <img src=${imagen} alt="item-imagen" class="item-imagen">
          <h3 class="item-titulo">${nombre}</h3>
          <h2 class="item-precio">${precio}</h2>
@@ -15,7 +19,7 @@ return contenidoHTML
 
 const construirElemento = (resultado) =>{
     const table = document.querySelector("[data-table]");
-    table.innerHTML = '';
+    table.innerHTML = ' ';
     
     resultado.forEach(({categoria, nombre, precio, descripcion, imagen, id}) =>{
         const table = document.querySelector("[data-table]");
@@ -26,14 +30,24 @@ const construirElemento = (resultado) =>{
 //3
 
 const getData = () => {
-   var res = fetch("http://localhost:3000/producto").then(res => res.json())
+  let opciones = {
+    method: "GET",
+    headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer pat2zTQBj6IKVhgSZ.ede3d29a1cb145fef8c928d43f400078d111431eca990d3256ebdf05a674dbbe'
+      },
+  
+    }
+  
+  var res = fetch('https://api.airtable.com/v0/appUuTyRjVBssZWDA/Contacto_info?maxRecords=3&view=Grid%20view', opciones).then(res => res.json())
    //console.log(res)
    return res  
 }
 //2
 
 const filtrarInput = () =>{
-    
+  const table = document.querySelector("[data-table]");
+  table.innerHTML = ' ';
     getData().then(respuesta => {
     
      //funcion para buscar el input
