@@ -12,7 +12,7 @@
      .hero__background{
          width: 80.6rem;
          height: 12rem;
-         background-image: url(/assets/imagenes/hero.png);
+         background-image: url('/assets/imagenes/hero.png');
          background-repeat: no-repeat;
          background-size: cover;
         
